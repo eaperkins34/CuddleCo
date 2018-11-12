@@ -1,0 +1,13 @@
+.mainDiv{
+    width: 80%;
+    text-align: left;
+    padding-left: 30px;
+    float: right;
+}
+
+#modal {
+    background-color: #B2EBF9;
+    width: 60%;
+    margin-left: 20em;
+    text-align: center;
+}

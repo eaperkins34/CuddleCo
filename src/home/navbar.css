@@ -1,0 +1,35 @@
+.navbar {
+    background: white;
+    text-align: right;    
+    font-size: 25px;
+    height: 3em;
+    border-bottom: 1px solid gray;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    display: inline;
+    margin: 0px 20px 0px 20px;
+}
+
+#logo {
+    height: 3em;
+    width: 10em;
+    margin-top: 0;
+    position: relative;
+    float: left;
+
+}
+
+li a{
+    color: #8c54a1;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #b2ebf9;
+}
