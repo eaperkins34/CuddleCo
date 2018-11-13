@@ -6,6 +6,7 @@ class AnimalUpdate extends React.Component {
     constructor(props) {
         super(props)
         this.state={
+            id: '',
             name: '',
             age: '',
             cat: '',
@@ -21,24 +22,26 @@ class AnimalUpdate extends React.Component {
     }
 
     handleSubmit = (event) => {
+        console.log(this.state)
         event.preventDefault();
         this.props.update(event, this.state)
     }
 
     componentWillMount() {
-        
+        console.log(this.props);
         this.setState({
-            name: this.props.name,
-            age: this.props.age,
-            cat: this.props.cat,
-            personality: this.props.personality,
-            image: this.props.image
+            id: this.props.animal.id,
+            name: this.props.animal.name,
+            age: this.props.animal.age,
+            cat: this.props.animal.cat,
+            personality: this.props.animal.personality,
+            image: this.props.animal.image
         })
     }
 
     render() {
         return(
-            <div className="mainDiv">
+            <div className="main">
                 <Modal id="modal" isOpen={true}>
                     <ModalHeader >
                         <ModalBody>

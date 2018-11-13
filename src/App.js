@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Navbar from './home/Navbar';
 import Sidebar from './home/Sidebar';
 import Home from './home/Home';
+import Test from './Test';
 import Splash from './home/Splash'
-//import Auth from './auth/Auth'
+import Auth from './auth/Auth'
 import './App.css';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ class App extends Component {
     this.state = {
       sessionToken: ''
     }
+    this.setSessionState = this.setSessionState.bind(this)
   }
 
   componentWillMount() {
@@ -34,6 +36,7 @@ class App extends Component {
 
   protectedViews = () => {
     if(this.state.sessionToken === localStorage.getItem('token')) {
+      console.log("got the token - protect views firing")
       return(
         <Switch>
           <Route path='/' exact>
@@ -45,8 +48,8 @@ class App extends Component {
       return (
         <Switch>
           <Route path='/home' exact>
-            <Home sessionToken ={this.setSessionState} />
-          </Route>
+            <Home setSessionState = {this.setSessionState} />
+          </Route>          
         </Switch>
       )
     }
@@ -70,3 +73,5 @@ class App extends Component {
 }
 
 export default App;
+
+// <Splash sessionToken = {this.state.sessionToken} />

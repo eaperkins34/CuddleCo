@@ -1,8 +1,9 @@
-.mainDiv{
+.main{
     width: 80%;
     text-align: left;
     padding-left: 30px;
     float: right;
+    
 
 }
 
@@ -11,4 +12,6 @@
     width: 60%;
     margin-left: 20em;
     text-align: center;
+    height: 50%;
+    position: absolute;
 }

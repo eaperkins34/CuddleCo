@@ -7,9 +7,8 @@ import Dogs from '../Pages/Dogs';
 import Auth from '../auth/Auth';
 import Home from "./Home";
 import Add from '../Updates/Add';
-import Edit from '../Updates/Edit';
 import Signup from '../auth/Signup';
-//import Splash from '../home/Splash'
+import Splash from '../home/Splash'
 import './navbar.css';
 
 export default class Navbar extends React.Component {
@@ -64,7 +63,7 @@ export default class Navbar extends React.Component {
                         <li><Link to='/' id="home"><img src={Logo} alt="logo" id="logo"/></Link></li>
                         <li><Link to='/createuser'>Create New User</Link></li>
                         <li><Link to='/add'>New Animal</Link></li>  
-                        <li><Link to='/edit' id="edit" >Edit Animal</Link></li>
+                        {/* <li><Link to='/edit' id="edit" >Edit Animal</Link></li> */}
                         <li><Link to='/auth' onClick={this.logout} >Logout</Link ></li>
                     </ul>
                 </div>
@@ -73,8 +72,8 @@ export default class Navbar extends React.Component {
                         {/* <Route exact path="/"><Splash /></Route> */}
                         <Route exact path='/createuser'><Signup setToken={this.props.setToken}/></Route>
                         <Route exact path="/add"><Add setToken={this.props.setToken}/></Route>
-                        <Route exact path='/edit'><Edit /></Route>
-                        <Route exact path='/auth'><Auth setToken={this.props.setToken} /></Route>
+                        {/* <Route exact path='/edit'><Edit /></Route> */}
+                        <Route exact path='/auth'><Splash /></Route>
                     </Switch>
                 </div>
             </div>
