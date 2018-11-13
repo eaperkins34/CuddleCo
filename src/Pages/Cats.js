@@ -2,6 +2,7 @@ import React from 'react';
 import '../home/Navbar';
 import CatTable from '../tables/CatTable';
 import "./animal.css"
+import APIURL from '../helpers/environment';
 
 class Cats extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ class Cats extends React.Component {
     }
 
     fetchCats = () => {
-        fetch("http://localhost:3000/animal/cats", {
+        fetch(`${APIURL}/animal/cats`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',

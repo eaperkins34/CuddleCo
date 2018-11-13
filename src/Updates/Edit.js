@@ -26,6 +26,7 @@ class AnimalUpdate extends React.Component {
     }
 
     componentWillMount() {
+        
         this.setState({
             name: this.props.name,
             age: this.props.age,

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import './update.css';
+import APIURL from '../helpers/environment'
 
 class NewAnimal extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class NewAnimal extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        fetch('http://localhost:3000/animal/create', {
+        fetch(`${APIURL}/animal/create`, {
             method: 'POST',
             body: JSON.stringify({ animal: this.state }),
             headers: new Headers({

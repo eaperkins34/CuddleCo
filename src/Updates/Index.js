@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import UpdateAnimal from './Edit';
 import AllAnimals from './All';
 import { Container, Row, Col } from 'reactstrap';
+import APIURL from '../helpers/environment'
 
 class AnimalIndex extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class AnimalIndex extends Component {
     }
 
     fetchAnimals = () => {
-        fetch('http://localhost:3000/animal/all', {
+        fetch(`${APIURL}/animal/all`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
@@ -29,7 +30,7 @@ class AnimalIndex extends Component {
     }
 
     animalUpdate = (event, animal) => {
-        fetch(`http://localhost:3000/animal/update/${animal.id}`, {
+        fetch(`${APIURL}/animal/update/${animal.id}`, {
            
         method: 'PUT',
             body: JSON.stringify({ table: animal }),
@@ -45,7 +46,7 @@ class AnimalIndex extends Component {
     }
 
     animalDelete = (event) => {
-        fetch(`http://localhost:3000/animal/delete/${event.target.id}`, {
+        fetch(`${APIURL}/animal/delete/${event.target.id}`, {
             method: 'DELETE',
             body: JSON.stringify({ animal: event.target.id }),
             headers: new Headers({
