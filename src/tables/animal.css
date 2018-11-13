@@ -5,10 +5,43 @@
 
 table {
     float: left;
-    width: 60%;
+    width: 90%;
 }
 
 .mainDiv {
     float: left;
 
+}
+
+#image {
+    width: 10%;
+    color: #8C54A1;
+    font-size: 25px;
+}
+
+#name {
+    width: 15%;
+    color: #8C54A1;
+    font-size: 25px;
+}
+
+#age {
+    width: 11%;
+    color: #8C54A1;
+    font-size: 25px;
+}
+
+#personality {
+    width: 50%;
+    color: #8C54A1;
+    font-size: 25px;
+}
+
+Button {
+    width: 6em;
+    background-color: #8C54A1;
+    color: #B2EBF9;
+    padding: 1em;
+    border-radius: 20%;
+    border: 1px solid #B2EBF9 
 }

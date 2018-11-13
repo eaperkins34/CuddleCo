@@ -1,6 +1,7 @@
 import React from 'react';
 import '../home/Navbar';
 import CatTable from '../tables/CatTable';
+import "./animal.css"
 
 class Cats extends React.Component {
     constructor(props) {
@@ -32,9 +33,9 @@ class Cats extends React.Component {
         
         return(
             <div className="mainDiv">
-                <h1>Our Cats</h1>
+                <h1>Our Cats</h1>                
+                <p>If you are interested in scheduling an appointment, we are open Monday-Friday 3pm-8pm. Please call us at 867-5309 to schedule.</p>
                 <CatTable animals={this.state.animals} />
-                <p>If you are interested in scheduling an appointment, we are open Monday-Friday 3pm-8pm. Please call us at 555-555-5555 to schedule.</p>
             </div>
         )
     }

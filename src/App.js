@@ -45,7 +45,7 @@ class App extends Component {
       return (
         <Switch>
           <Route path='/home' exact>
-            <Home sessionToken ={this.state.sessionToken} />
+            <Home sessionToken ={this.setSessionState} />
           </Route>
         </Switch>
       )

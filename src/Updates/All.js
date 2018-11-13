@@ -10,10 +10,10 @@ const AllTable = (props) => {
             <Table striped>
                 <thead>
                     <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Personality</th>
+                        <th id="image">Image</th>
+                        <th id="name">Name</th>
+                        <th id="age">Age</th>
+                        <th id="personality">Personality</th>
                     </tr>
                 </thead>
                 <tbody>

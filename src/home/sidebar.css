@@ -2,11 +2,24 @@
     background: #aea1ea;
     float: left;
     width: 15%;
-    margin-left: 2%;
+    margin: 0;
     text-align: left;
-    height: 30em;
+    height: 100%;
+    padding-left:0.3%;
+
 }
 
 #title {
     color: white;
 }
+
+.info {
+    color: white;
+    font-size: 13px;
+}
+
+#humaneSoc a:hover{
+    color: #b2ebf9;
+    font-size: 16px;
+}
+

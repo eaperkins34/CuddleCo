@@ -39,7 +39,7 @@ export default class Navbar extends React.Component {
                 <div>                    
                     <ul className="navbar">
                         <li><Link to='/home' id="home"><img src={Logo} alt="logo" id="logo"/></Link></li>
-                        <li><Link to='/adopt'>Adopt</Link></li>  
+                        <li><Link to='/adopt' id="adopt">Adopt</Link></li>  
                         <li><Link to='/cats' id="cats" >Cats</Link></li>
                         <li><Link to='/dogs' id="dogs">Dogs</Link></li>
                         <li><Link to='/auth' id='auth'>Login</Link></li>
