@@ -5,7 +5,7 @@ switch (window.location.hostname) {
         APIURL = 'http://localhost:3000';
         break;
     case 'cuddleclient.herokuapp.com':
-        APIURL = 'https://cuddleserver.herokuapp.com/'
+        APIURL = 'https://cuddleserver.herokuapp.com'
 }
 
 export default APIURL;  
