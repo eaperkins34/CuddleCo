@@ -27,6 +27,8 @@ class AnimalUpdate extends React.Component {
         this.props.update(event, this.state)
     }
 
+
+
     componentWillMount() {
         console.log(this.props);
         this.setState({
@@ -39,10 +41,18 @@ class AnimalUpdate extends React.Component {
         })
     }
 
+    handleOpen= () => {
+        this.setState({ modal_open: true })
+    }
+
+    handleClose = () => {
+        this.setState({ modal_open: false})
+    }
+
     render() {
         return(
             <div className="main">
-                <Modal id="modal" isOpen={true}>
+                <Modal id="modal" isOpen={this.handleOpen}>
                     <ModalHeader >
                         <ModalBody>
                             <h1>Update</h1>
@@ -71,7 +81,8 @@ class AnimalUpdate extends React.Component {
                                 <Label for="image">Image</Label><br />
                                 <Input id="image" type="url" name="image" value={this.state.image} placeholder="image url" onChange={this.handleChange} />
                             </FormGroup><br />
-                            <Button type="submit" color="primary"> Submit </Button>
+                            <Button type="submit"> Submit </Button>
+                            <Button type="cancel" onSubmit={this.handleClose}> Cancel </Button> 
                             </Form>
                         </ModalBody>
                     </ModalHeader>

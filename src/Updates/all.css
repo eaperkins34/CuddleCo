@@ -1,0 +1,15 @@
+#allTable{
+    width: 100%;
+}
+
+#tdname {
+    width: 10%;
+}
+
+#tdage {
+    width: 15%;
+}
+
+#tdperson {
+    width: 35%;
+}

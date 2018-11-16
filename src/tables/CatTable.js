@@ -20,9 +20,9 @@ const CatTable = (props) => {
                         return(
                             <tr key={id}>
                                 <th scope="row"><img src={animal.image} id="pic" alt="cat"></img></th>
-                                <td>{animal.name}</td>
-                                <td>{animal.age}</td>
-                                <td>{animal.personality}</td>
+                                <td id="tdname">{animal.name}</td>
+                                <td id="tdage">{animal.age}</td>
+                                <td id="tdperson">{animal.personality}</td>
                                
                             </tr>
                         )

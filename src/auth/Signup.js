@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
 import APIURL from '../helpers/environment';
 
 class Signup extends Component {
@@ -33,19 +33,17 @@ class Signup extends Component {
             localStorage.setItem('username', data.user.username);
             console.log('token');
         })
-        .then((display) => {
+        .then((confirm) => {
             return(
-                <h1>New User Added</h1>
+                <Alert color="success">New User Created!</Alert>
             )
         })
-        event.preventDefault()
     }
 
     render() {
         return(
             <div className="mainDiv">
-                <h1>Sign Up!</h1>
-                <p>See an animal that you just can't wait to cuddle?? Sign up to schedule a time!</p>
+                <h1>Create a new user</h1>
                 <Form onSubmit={this.handleSubmit}>
                     <FormGroup>
                         <Label for="username">Username </Label><br />

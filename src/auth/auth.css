@@ -1,13 +1,6 @@
 .mainDiv{
-    width: 80%;
-    text-align: left;
-    padding-left: 30px;
-    float: right;
-}
-
-.signup {
-    width: 50%;
-    float: left;
+    margin-left: 20%;
+    position: absolute;
 }
 
 .login {

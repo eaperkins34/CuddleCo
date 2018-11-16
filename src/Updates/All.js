@@ -1,13 +1,13 @@
 import React from 'react';
 import { Table, Button } from 'reactstrap';
-import '../tables/animal.css'
+import './all.css';
 
 
 const AllTable = (props) => {
     return (
         <div>
             <br />
-            <Table striped>
+            <Table id="allTable" striped>
                 <thead>
                     <tr>
                         <th id="image">Image</th>
@@ -21,9 +21,9 @@ const AllTable = (props) => {
                         return(
                             <tr key={id}>
                                 <th scope="row"><img src={animal.image} id="pic" alt="cat"></img></th>
-                                <td>{animal.name}</td>
-                                <td>{animal.age}</td>
-                                <td>{animal.personality}</td>
+                                <td id="tdname">{animal.name}</td>
+                                <td id="tdage">{animal.age}</td>
+                                <td id="tdperson">{animal.personality}</td>
                                 <td>
                                     <Button id={animal.id} onClick={props.delete} color="danger">Delete</Button>
                                     <Button id={animal.id} onClick={e => props.update(e, animal)} color="warning">Update</Button>

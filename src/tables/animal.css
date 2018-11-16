@@ -6,6 +6,7 @@
 table {
     float: left;
     width: 90%;
+    height: 100%;
 }
 
 .mainDiv {
@@ -32,7 +33,7 @@ table {
 }
 
 #personality {
-    width: 50%;
+    width: 20%;
     color: #8C54A1;
     font-size: 25px;
 }
@@ -44,4 +45,12 @@ Button {
     padding: 1em;
     border-radius: 20%;
     border: 1px solid #B2EBF9 
+}
+
+#tdname {
+    text-align: center;
+    font-weight: bold;
+}
+#tdage {
+    text-align: center;
 }

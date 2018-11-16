@@ -4,6 +4,7 @@ import UpdateAnimal from './Edit';
 import AllAnimals from './All';
 import { Container, Row, Col } from 'reactstrap';
 import APIURL from '../helpers/environment'
+import './update.css'
 
 class AnimalIndex extends Component {
     constructor(props) {
@@ -75,7 +76,7 @@ class AnimalIndex extends Component {
         delete={this.animalDelete} update={this.setUpdatedAnimal} /> : 
         <div></div>
         return(
-            <Container>
+            <Container id="container1">
                 <Row>
                     {/* <Col md="3">
                         <AddAnimal token={this.props.token} updateAnimals={this.fetchAnimals} />

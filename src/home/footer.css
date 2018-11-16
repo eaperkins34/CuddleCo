@@ -1,0 +1,28 @@
+#container {
+    clear: both;
+    background-color: #333237;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10em;
+    
+}
+
+#links {
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5%;
+}
+#logofooter {
+    height: 12em;
+    width: 15em;
+}
+
+#links a{
+    color: #B2EBF9;
+
+}
+#brand{
+    float: left;
+}

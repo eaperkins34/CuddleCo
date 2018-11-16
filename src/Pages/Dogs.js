@@ -35,6 +35,10 @@ class Cats extends React.Component {
         return(
             <div className="mainDiv">
                 <h1>Our Dogs</h1>
+                <p>Doggo ipsum you are doing me the shock long water shoob. Bork floofs you are doing me the shock corgo boof, big ol pupper 
+                   dat tungg tho you are doin me a concern, ur givin me a spook borkdrive he made many woofs. Ur givin me a spook boof maximum 
+                   borkdrive puggorino smol borking doggo with a long snoot for pats boof very good spot, lotsa pats long doggo such treat the 
+                   neighborhood pupper maximum borkdrive. Blep floofs pupper pats he made many woofs puggo, floofs shooberino sub woofer. </p>
                 If you are interested in scheduling an appointment, we are open Monday-Friday 3pm-8pm. Please call us at 867-5309 to schedule.
                 <DogTable animals={this.state.animals} />
             </div>

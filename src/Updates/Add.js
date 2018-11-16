@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import './update.css';
 import APIURL from '../helpers/environment'
 
 class NewAnimal extends Component {
@@ -50,20 +49,20 @@ class NewAnimal extends Component {
     render() {
         return (
             <div className="mainDiv">
-                <h2>Add a new animal</h2>
+                <h1>Add a new animal</h1>
                 <br />
                 <Form onSubmit={this.handleSubmit} >
                     <FormGroup>
                         <Label for="name">Name </Label><br />
-                        <Input id="name" type="text" name="name" value={this.state.name} placeholder="enter name" onChange={this.handleChange} />
+                        <Input id="nameinput" type="text" name="name" value={this.state.name} placeholder="enter name" onChange={this.handleChange} />
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="age">Age </Label><br />
-                        <Input id="age" type="text" name="age" value={this.state.age} placeholder="enter age" onChange={this.handleChange} />
+                        <Input id="ageinput" type="text" name="age" value={this.state.age} placeholder="enter age" onChange={this.handleChange} />
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="cat">Cat? </Label> <br />
-                        <Input id="cat" type="select" name="cat" value={this.state.cat} placeholder="Cat?" onChange={this.handleChange}>
+                        <Input id="catinput" type="select" name="cat" value={this.state.cat} placeholder="Cat?" onChange={this.handleChange}>
                             <option></option>
                             <option value="true">True</option>
                             <option value="false">False</option>
@@ -71,11 +70,11 @@ class NewAnimal extends Component {
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="personality">Personality Traits</Label><br />
-                        <Input id="personality" type="text" name="personality" value={this.state.personality} placeholder="personality traits" onChange={this.handleChange} />
+                        <Input id="personalityinput" type="text" name="personality" value={this.state.personality} placeholder="personality traits" onChange={this.handleChange} />
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="image">Image</Label><br />
-                        <Input id="image" type="url" name="image" value={this.state.image} placeholder="image url" onChange={this.handleChange} />
+                        <Input id="imageinput" type="url" name="image" value={this.state.image} placeholder="image url" onChange={this.handleChange} />
                     </FormGroup><br />
                     <Button type="submit" color="primary" > Submit </Button>
                 </Form>

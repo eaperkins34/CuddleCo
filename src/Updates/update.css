@@ -9,9 +9,14 @@
 
 #modal {
     background-color: #B2EBF9;
-    width: 60%;
-    margin-left: 20em;
+    width: 50%;
+    margin-left: 38em;
+    margin-top: -60em;
     text-align: center;
-    height: 50%;
     position: absolute;
+}
+
+#container1 {
+    background: white;
+    height: 100%;
 }

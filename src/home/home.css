@@ -1,6 +1,22 @@
 .mainDiv{
-    width: 80%;
-    text-align: left;
-    padding-left: 30px;
-    float: right;
+    width: 100%;
+    background: white;
+    margin-right: 5%;
+
 }
+
+#consult {
+    height: 30%;
+    width: 30%;
+    float: left;
+    padding-right: 1%;
+}
+
+#consult2 {
+    float: right;
+    height: 30%;
+    width: 30%;
+    
+}
+
+
