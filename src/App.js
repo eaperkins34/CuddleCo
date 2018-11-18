@@ -97,10 +97,10 @@ class App extends Component {
            <div className="protectedView"> 
             {this.protectedViews()}
            </div> 
-        
         </Router>
+        
         <Sidebar />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

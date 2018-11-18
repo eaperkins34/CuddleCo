@@ -51,6 +51,12 @@ export default class Home extends Component {
                             cougar, mouser, norwegian forest. Birman bobcat maine coon himalayan. Kitten norwegian forest or ragdoll. Donskoy
                             bobcat. Savannah. Siamese grimalkin, and tom. Manx scottish fold persian and tiger, puma yet tabby. American shorthair 
                             cheetah, and devonshire rex so malkin or tom leopard. Singapura jaguar but manx. </p>
+                        
+                        <p> Ocelot lynx tiger yet panther mouser cougar. Cougar cornish rex. British shorthair leopard manx tabby kitty. Lynx malkin 
+                            but munchkin munchkin. Manx kitty. Cougar turkish angora for british shorthair, singapura but tomcat for balinese . Ragdoll 
+                            jaguar but cheetah but ocelot panther, and american shorthair singapura. Kitten. British shorthair maine coon. Lynx american 
+                            shorthair, and ragdoll. Kitty russian blue or tiger, yet russian blue manx tiger but egyptian mau. Cougar British shorthair
+                            maine coon, yet burmese. American shorthair russian blue but tabby so siberian but puma for maine.</p>
                    </div>
                 </div>
                 </Row>

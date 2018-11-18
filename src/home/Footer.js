@@ -1,7 +1,11 @@
 import React from 'react';
 import './footer.css'
 import { Container, Row, Col } from 'reactstrap';
-import Logo from '../assets/logo_transparent.png'
+import Logo from '../assets/logo_transparent.png';
+// import Facebook from '../assets/facebook.svg';
+// import Twitter from '../assets/twitter.svg';
+// import Instagram from '../assets/instagram.svg';
+
 
 const Footer = () => {
     return(
@@ -16,6 +20,9 @@ const Footer = () => {
                     <p><a href="/">Rental Contract</a></p>
                     <p><a href="/">Terms of Service</a></p>
                     <p><a href="/">Other Stuff</a></p>
+                    {/* <img className="icon" src={Facebook} alt="facebook" />
+                    <img className="icon" src={Twitter} alt="twitter" />
+                    <img className="icon" src={Instagram} alt="instagram" /> */}
                 </Col>
             </Row>
         </Container>

@@ -63,7 +63,7 @@ class Signup extends Component {
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="email">Email </Label><br />
-                        <Input id="email" type="text" name="email" placeholder="email" onChange={this.handleChange} />
+                        <Input id="email" type="email" name="email" placeholder="email" onChange={this.handleChange} />
                     </FormGroup><br />
                     <FormGroup>
                         <Label for="password">Password </Label><br />
