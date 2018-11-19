@@ -31,7 +31,6 @@ class AnimalIndex extends Component {
     }
 
     animalUpdate = (event, animal) => {
-        console.log(animal);
         fetch(`${APIURL}/animal/update/${animal.id}`, {
            
         method: 'PUT',
