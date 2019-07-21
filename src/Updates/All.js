@@ -25,7 +25,7 @@ const AllTable = (props) => {
                                 <td id="tdage">{animal.age}</td>
                                 <td id="tdperson">{animal.personality}</td>
                                 <td>
-                                    <Button id={animal.id} onClick={props.delete} color="danger">Delete</Button>
+                                    <Button id={animal.id} onClick={props.delete} color="danger">I've been adopted!</Button>
                                     <Button id={animal.id} onClick={e => props.update(e, animal)} color="warning">Update</Button>
                                 </td>
                             </tr>
